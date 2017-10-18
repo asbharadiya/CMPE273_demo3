@@ -1,0 +1,206 @@
+/*GLOBAL*/
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-size: 13px;
+  background-color: #fff;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #3d464d;
+}
+
+a {
+  color: #2895F1;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #2895F1;
+}
+
+.btn-dropbox {
+  background-color: #0070E0;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px 16px;
+  line-height: 32px;
+  border: 0px;
+}
+
+.btn-dropbox:hover {
+  background-color: #007AF5;
+  border: 0px;
+}
+
+.btn-dropbox:focus { 
+  background-color: #005DD6;
+  border: 0px;
+}
+
+.btn-dropbox:active { 
+  background-color: #005DD6;
+  border: 0px;
+}
+
+.btn-dropbox-default {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px 16px;
+  line-height: 32px;
+}
+
+/*LANDING PAGE*/
+
+.landing-page header {
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  height: 76px;
+  z-index: 99;
+  font-size: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #d0d4d9;
+  -webkit-box-shadow: 0px 1px 1px #d0d4d9;
+  box-shadow: 0px 1px 1px #d0d4d9;
+  line-height: 26px;
+}
+
+.landing-page .page-content {
+  text-align: center;
+  min-height: 425px;
+  padding-bottom: 50px;
+}
+
+.landing-page .page-content .page-inner-content {
+  padding-top: 126px;
+}
+
+.landing-page .page-content .form-container {
+  width: 350px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.landing-page .page-content .form-container .error {
+  color: #e82110;
+  font-size: 12px;
+  float: left;
+}
+
+.landing-page .page-content .form-container .signin-form {
+
+}
+
+.landing-page .page-content .form-container .signin-form .form-header {
+  margin-bottom: 30px;
+}
+
+.landing-page .page-content .form-container .signin-form .form-header .title {
+  font-size: 18px;
+  margin: 0px;
+  text-align: left;
+}
+
+.landing-page .page-content .form-container .signin-form .form-header .subscript {
+  text-align: right;
+  margin: 0px;
+}
+
+.landing-page .page-content .form-container .signin-form .form-body {
+
+}
+
+.landing-page .page-content .form-container .signin-form .form-body .form-group {
+  margin-bottom: 30px;
+}
+
+.landing-page .page-content .form-container .signin-form .form-body .form-group.btn-container {
+  margin-bottom: 0px;
+  text-align: right;
+}
+
+.landing-page .page-content .form-container .signup-form {
+
+}
+
+.landing-page .page-content .form-container .signup-form .form-header {
+  margin-bottom: 30px;
+}
+
+.landing-page .page-content .form-container .signup-form .form-header .title {
+  font-size: 18px;
+  margin: 0px;
+  text-align: left;
+}
+
+.landing-page .page-content .form-container .signup-form .form-header .subscript {
+  text-align: right;
+  margin: 0px;
+}
+
+.landing-page .page-content .form-container .signup-form .form-body {
+
+}
+
+.landing-page .page-content .form-container .signup-form .form-body .form-group {
+  margin-bottom: 30px;
+}
+
+.landing-page .page-content .form-container .signup-form .form-body .form-group.btn-container {
+  margin-bottom: 0px;
+  text-align: right;
+}
+
+/*DASHBOARD*/
+.dashboard-page {
+
+}
+
+.dashboard-page .page-content {
+  min-height: 425px;
+}
+
+.dashboard-page .page-content header {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: #fff;
+  padding: 40px 40px 0 40px;
+  height: 96px;
+  z-index: 5;
+}
+
+.dashboard-page .page-content header .topnav-container {
+  float: right;
+}
+
+.dashboard-page .page-content .inner-page-content {
+  padding-top: 96px;
+}
+
+/*ACCOUNTPAGE*/
+
+.dashboard-page .page-content .accountspage {
+  width: 400px;
+  margin: 0px auto;
+} 
+
+.dashboard-page .page-content .accountspage .page-header {
+  margin: 0;
+  padding: 0px;
+  font-weight: 400;
+  line-height: 40px;
+  height: 40px;
+  font-size: 12px;
+  color: #637282;
+  border-bottom: solid 1px #E6E8EB;
+  margin-bottom: 30px;
+}
