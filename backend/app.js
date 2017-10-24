@@ -4,6 +4,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var http = require('http');
+
+var mongo = require("./routes/mongo");
 
 var passport = require('passport');
 
@@ -29,6 +32,7 @@ var corsOptions = {
 }
 app.use(cors(corsOptions))
 
+app.set('port', process.env.PORT || 3001);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -77,6 +81,13 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+mongo.connect(mongoSessionURL, function(){
+  console.log('Connected to mongo at: ' + mongoSessionURL);
+  http.createServer(app).listen(app.get('port'), function(){
+    console.log('Express server listening on port ' + app.get('port'));
+  });
 });
 
 module.exports = app;
